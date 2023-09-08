@@ -7,8 +7,7 @@
  * Return: Always 0 (Success)
 */
 int main(void)
-{
-	char low_alp = 'a';
+{	char low_alp = 'a';
 	while (low_alp <= 'z')
 	{
 		putchar(low_alp);
