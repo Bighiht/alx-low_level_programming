@@ -11,7 +11,7 @@ int main(void)
 
 	while (hex <= 102)
 	{
-		puchar(hex);
+		putchar(hex);
 		if (hex == 57)
 			hex += 39;
 		hex++;
