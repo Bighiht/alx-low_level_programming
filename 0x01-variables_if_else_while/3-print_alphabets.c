@@ -12,7 +12,7 @@ int main(void)
 	while (low_alp <= 'z')
 	{
 		putchar(low_alp);
-		low_alp++
+		low_alp++;
 	}
 	while (upper_alp <= 'Z')
 	{
