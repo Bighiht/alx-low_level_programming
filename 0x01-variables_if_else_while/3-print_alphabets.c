@@ -9,9 +9,9 @@
 int main(void)
 {	char low_alp = 'a';
 	char upper_alp = 'A';
+
 	while (low_alp <= 'z')
-	{
-		putchar(low_alp);
+	{	putchar(low_alp);
 		low_alp++;
 	}
 	while (upper_alp <= 'Z')
