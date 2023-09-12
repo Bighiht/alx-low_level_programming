@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabet - Entry point
  *
  * Description: A C program that prints with printf function.
  *
@@ -9,8 +9,7 @@
 */
 
 void print_alphabet(void)
-{
-	int ch;
+{	int ch;
 
 	for (ch = 'a'; ch <= 'z'; ch++)
 		_putchar(ch);
