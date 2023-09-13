@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * numlenght - Entry point
  *
  * @num: fsd
  *
