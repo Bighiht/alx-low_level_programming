@@ -36,7 +36,7 @@ int main(void)
 
 	for (count = 1; count <= 98; count++)
 	{
-		if (flo > 0)
+		if (f1o > 0)
 			printf("%lu", f1o);
 		initial0s = numlenght(mx) - 1 - numlenght(f1);
 
