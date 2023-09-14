@@ -4,19 +4,15 @@
  * @n: is the integer for the paramaters of my function
  * Return: 0
  */
-void print_line(int n)
-{
-	int a = 0;
+int print_line(int n)
+{	int i;
 
-	if (n > 0)
-	{
-		while (a <= n)
-		{
-			_putchar('_');
-			a++;
-		}
-	 _putchar('\n');
-	}
+	if (n <= 0)
+		_putchar('\n');
 	else
-	_putchar('\n');
+	{
+		for (i = 1; i <= n; i++)
+			_putchar('_');
+		_putchar('\n');
+	}
 }
