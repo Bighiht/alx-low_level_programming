@@ -4,7 +4,7 @@
  * @n: is the integer for the paramaters of my function
  * Return: 0
  */
-int print_line(int n)
+void print_line(int n)
 {	int i;
 
 	if (n <= 0)
