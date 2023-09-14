@@ -3,7 +3,7 @@
 /**
  * print_square - Entry point
  *
- * @siza: fafa
+ * @size: fafa
  *
  * Return: Always 0 (Success)
 */
@@ -13,7 +13,7 @@ void print_square(int size)
 
 	for (row = 0; row < size; row++)
 	{
-		for (column = 0; column < k; column++)
+		for (column = 0; column < size; column++)
 			_putchar('#');
 		_putchar('\n');
 	}
