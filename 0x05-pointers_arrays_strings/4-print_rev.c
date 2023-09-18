@@ -1,21 +1,25 @@
 #include "main.h"
-
 /**
- * print_rev - Entry point
- *
- * @s: A C program that prints with printf function.
- *
- * Return: Always 0 (Success)
-*/
-
+ * print_rev - imprime en reversa
+ * @s: string
+ * return: 0
+ */
 void print_rev(char *s)
-{	int i;
+{
+	int longi = 0;
+	int o;
 
-	while (s[i])
-		i++;
-	while (i--)
+	while (*s != '\0')
 	{
-		putchar(s[i]);
+		longi++;
+		s++;
 	}
+	s--;
+	for (o = longi; o > 0; o--)
+	{
+		putchar(*s);
+		s--;
+	}
+
 	putchar('\n');
 }
