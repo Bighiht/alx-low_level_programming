@@ -1,19 +1,13 @@
 #include "main.h"
-
 /**
- * _puts - Entry point
- *
- * @str: A C program that prints with printf function.
- *
- * Return: Always 0 (Success)
-*/
-
+ * _puts - prints a string, followed by a new line, to stdout
+ * @str: string to print
+ */
 void _puts(char *str)
 {
 	while (*str != '\0')
 	{
 		_putchar(*str++);
-		*str++
 	}
-	_putchar('\n');
+		_putchar('\n');
 }
