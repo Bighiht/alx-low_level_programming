@@ -1,26 +1,27 @@
 #include "main.h"
-
 /**
- * _strncpy - Entry point
+ * _strncpy - copy a string
+ * @dest: input value
+ * @src: input value
+ * @n: input value
  *
- * @dest: A C program that prints with printf function.
- *
- * @src: fwfop
- *
- * @n: fwse
- *
- * Return: Always 0 (Success)
-*/
-
+ * Return: dest
+ */
 char *_strncpy(char *dest, char *src, int n)
-{	int i;
+{
+	int j;
 
-	for (i = 0; i < n && scr[i] != '\0'; i++)
-		dest[i] = scr[i];
-	while (i < n)
+	j = 0;
+	while (j < n && src[j] != '\0')
 	{
-		dest[i] = '\0';
-		i++;
+		dest[j] = src[j];
+		j++;
 	}
+	while (j < n)
+	{
+		dest[j] = '\0';
+		j++;
+	}
+
 	return (dest);
 }

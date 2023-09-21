@@ -1,22 +1,20 @@
 #include "main.h"
-
 /**
- * reverse_array - Entry point
+ * reverse_array - reverse array of integers
+ * @a: array
+ * @n: number of elements of array
  *
- * @a: A C program that prints with printf function.
- *
- * @n: fwfop
- *
- * Return: Always 0 (Success)
-*/
-
+ * Return: void
+ */
 void reverse_array(int *a, int n)
-{	int i, j, k;
+{
+	int i;
+	int t;
 
-	for (i = 0, j = (n - 1); i < j; i++, j--)
+	for (i = 0; i < n--; i++)
 	{
-		k = a[i];
-		a[i] = a[j];
-		a[j] = k;
+		t = a[i];
+		a[i] = a[n];
+		a[n] = t;
 	}
 }

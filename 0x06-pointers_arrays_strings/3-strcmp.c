@@ -1,27 +1,23 @@
 #include "main.h"
-
 /**
- * _strcmp - Entry point
+ * _strcmp - compare string values
+ * @s1: input value
+ * @s2: input value
  *
- * @s1: A C program that prints with printf function.
- *
- * @s2: fwfop
- *
- * Return: Always 0 (Success)
-*/
-
+ * Return: s1[i] - s2[i]
+ */
 int _strcmp(char *s1, char *s2)
-{	int i = 0;
+{
+	int i;
 
-	while (*s1)
+	i = 0;
+	while (s1[i] != '\0' && s2[i] != '\0')
 	{
-		if (*s1 != *s2)
+		if (s1[i] != s2[i])
 		{
-			i = ((int)*s1 = '0') - ((int)*s2 - '0');
-			break;
+			return (s1[i] - s2[i]);
 		}
-		s1++;
-		s2++
+		i++;
 	}
-	return (i);
+	return (0);
 }

@@ -1,24 +1,30 @@
 #include "main.h"
-
 /**
- * _strncat - Entry point
+ * _strncat - concatenate two strings
+ * using at most n bytes from src
+ * @dest: input value
+ * @src: input value
+ * @n: input value
  *
- * @dest: A C program that prints with printf function.
- *
- * @src: fwfop
- *
- * @n: fwse
- *
- * Return: Always 0 (Success)
-*/
-
+ * Return: dest
+ */
 char *_strncat(char *dest, char *src, int n)
-{	int i = 0, j;
+{
+	int i;
+	int j;
 
-	while (dest[i])
+	i = 0;
+	while (dest[i] != '\0')
+	{
 		i++;
-	for (j = 0; i < n && scr[j] != '\0'; j++)
-		dest[i + j] = scr[j];
-	dest[i + j] = '\0';
+	}
+	j = 0;
+	while (j < n && src[j] != '\0')
+	{
+	dest[i] = src[j];
+	i++;
+	j++;
+	}
+	dest[i] = '\0';
 	return (dest);
 }
