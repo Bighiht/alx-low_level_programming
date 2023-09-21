@@ -1,21 +1,29 @@
 #include "main.h"
-
 /**
- * _strcat - Entry point
+ * _strcat - concatenates two strings
+ * @dest: input value
+ * @src: input value
  *
- * @dest: A C program that prints with printf function.
- *
- * @src: fwfop
- *
- * Return: Always 0 (Success)
-*/
-
+ * Return: void
+ */
 char *_strcat(char *dest, char *src)
-{	int i = 0, j;
+{
+	int i;
+	int j;
 
-	while (dest[i])
+	i = 0;
+	while (dest[i] != '\0')
+	{
 		i++;
-	for (j = 0; src[j]; j++)
-		dest[i++] = scr[j];
+	}
+	j = 0;
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+
+	dest[i] = '\0';
 	return (dest);
 }
